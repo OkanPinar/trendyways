@@ -1,46 +1,44 @@
 {
-  "name": "trendyways",
-  "preferGlobal": true,
-  "version": "0.8.0",
-  "author": "Ruben Afonso <rbfrancos@gmail.com>",
-  "description": "a javascript library for financial technical analysis",
-  "contributors": [
-    {
-      "name": "Ruben Afonso",
-      "email": "rbfrancos@gmail.com"
-    }
-  ],
-  "main": "dist/trendyways.min.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rubenafo/trendyways.git"
-  },
-  "keywords": [
-    "technical analysis",
-    "financial",
-    "finance",
-    "javascript",
-    "series"
-  ],
-  "bundledDependencies": [
-    "uglify-js",
-    "jsdoc"
-  ],
-  "devDependencies": {
-    "browserify": "^16.2.3",
-    "coveralls": "^2.11.6",
-    "istanbul": "^0.4.2",
-    "jsdoc": "^3.6.3",
-    "mocha": ">=2.3.4",
-    "uglify-es": "^3.3.9",
-    "uglifyjs-webpack-plugin": "^2.1.1"
-  },
-  "license": "Apache-2.0",
-  "engines": {
-    "node": ">=0.10.15"
-  },
-  "scripts": {
-    "test": "mocha tests",
-    "test-travis": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec ./tests"
-  }
+	"name": "trendyways",
+	"version": "0.9.0",
+	"author": {
+		"name": "Ruben Afonso",
+		"email": "rbfrancos@gmail.com"
+	},
+	"description": "a typescript library for financial technical analysis",
+	"scripts": {
+		"build": "tsc && tsc-alias",
+		"test": "jest --coverage --verbose false"
+	},
+	"contributors": [
+		{
+			"name": "Ruben Afonso",
+			"email": "rbfrancos@gmail.com"
+		},
+		{
+			"name": "Okan Pinar",
+			"email": "dev.okanpin@gmail.com"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/OkanPinar/trendyways.git"
+	},
+	"keywords": [
+		"technical analysis",
+		"financial",
+		"finance",
+		"typescript",
+		"timeseries"
+	],
+	"devDependencies": {
+		"@types/jest": "^29.0.3",
+		"@types/node": "^16.11.6",
+		"jest": "^29.0.3",
+		"jsdoc": "^3.6.3",
+		"ts-jest": "^29.0.1",
+		"ts-node": "^10.9.1",
+		"tsc-alias": "^1.7.0",
+		"typescript": "^4.8.3"
+	}
 }

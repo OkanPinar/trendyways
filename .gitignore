@@ -1,1 +1,10 @@
 node_modules
+
+src_old/
+tests_old/
+
+# Test outputs
+.nyc_output/
+coverage/
+
+dist/
